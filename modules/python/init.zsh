@@ -131,7 +131,7 @@ if (( $+VIRTUALENVWRAPPER_VIRTUALENV || $+commands[virtualenv] )) \
 
     virtenv_sources=(
       ${(@Ov)commands[(I)virtualenvwrapper(_lazy|).sh]}
-      /usr/share/virtualenvwrapper/virtualenvwrapper(_lazy|).sh(OnN)
+      /usr/local/virtualenvwrapper/virtualenvwrapper(_lazy|).sh(OnN)
     )
     if (( $#virtenv_sources )); then
       source "$virtenv_sources[1]"
